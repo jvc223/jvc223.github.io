@@ -1,0 +1,67 @@
+/* styles.css 
+   Project: 
+   Author: 
+   Date: 
+*/
+
+/*google font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400&display=swap');
+
+/*main css*/
+
+
+* {
+   box-sizing: border-box;
+}
+
+img {
+   /*width: 100%;*/
+   display: block;
+}
+
+body {
+   background-color: lavender;
+/*   font-family: 'Lato', sans-serif;*/
+   font-family: 'Orbitron', sans-serif;
+   /*font-family: 'Montserrat', sans-serif;*/
+}
+
+.counter {
+   width: 40%;
+   margin: auto;
+   text-align: center;
+   font-size: 1.5em;
+}
+
+#kareem, #lebron {
+   background-color: black;
+   color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+/*media query for responsive design */
+
+@media only screen and (max-width: 640px) {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
