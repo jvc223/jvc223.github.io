@@ -1,0 +1,306 @@
+/* styles.css 
+   Project: Schmidt Happens Fantasy Baseball
+   Author: Joe Calabrese
+   Date: Feb. 14, 2023
+*/
+
+/*google font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400&display=swap');
+
+/*main css*/
+
+:root{
+   font-size:16px;
+   --text-primary: #E7F6F2;
+   --text-secondary: #ececec;
+   --bg-primary: #2C3333;
+   --bg-secondary: #395B64;
+   --bg-tertiary: #A5C9CA;
+   --bg-quaternary: #E7F6F2;
+   --highlight: #EB6440;
+}
+
+
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+img {
+   /*width: 100%;*/
+   display: block;
+}
+
+body {
+   background-color: var(--bg-primary);
+   font-family: 'Lato', sans-serif;
+   /*font-family: 'Montserrat', sans-serif;*/
+}
+
+.break {
+   fill: var(--bg-quaternary);
+}
+
+.bar {
+   stroke: black;
+   stroke-width: 1;
+}
+
+.bar:hover {
+   fill: var(--highlight);
+}
+
+
+/***************************************************
+************************HEADER**********************
+* *************************************************/
+
+.banner {
+   width: calc(100% - 5rem);
+   margin-left: 5rem;
+   min-height: 65vh;
+   background-color: rgba(44, 51, 51, 0.9);
+/*   opacity: 65%;*/
+   background-image: url('../img/yankeestadium.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+.imgoverlay {
+   width: 100%;
+/*   margin-left: 5rem;*/
+   min-height: 65vh;
+   background-color: rgba(57, 91, 100, 0.75);
+   display: grid;
+}
+
+.title {
+   background-color: var(--bg-tertiary);
+   color: linen;
+   text-align: center;
+   padding: 20px;
+   width: 40%;
+   margin: auto;
+   align-self: center;
+}
+
+.est {
+   font-family: 'Yellowtail', cursive;
+}
+
+/*************************************************
+**************************************************
+****************EVERYTHING ELSE*******************
+**************************************************
+*************************************************/
+
+.rest {
+   width: calc(100% - 5rem);
+   margin-left: 5rem;
+}
+
+.commishLetter, .stats, .rosterHistory {
+/*   background-color: #bbe1fa;*/
+   
+   margin: 25px auto;
+   padding: 30px;
+   text-align: justify;
+   line-height: 2em;
+   box-shadow: 6px 6px 20px -7px rgba(166,166,166,1);
+}
+
+.commishLetter {
+   border-radius: 5px;
+   background-color: var(--bg-quaternary);
+   width: 60%;
+}
+
+.commishLetter p {
+   margin: 20px 0;
+}
+
+.signoff {
+   text-align: right;
+   margin: 0px 0px;
+   line-height: 1em;
+}
+
+.signature {
+   font-family: 'Yellowtail', cursive;
+   font-size: 2.5em;
+}
+
+.accolades {
+   font-style: italic;
+}
+
+/*************************************************
+**************************************************
+****************CHARTS GO BURRR*******************
+**************************************************
+*************************************************/
+
+.teams text {
+   display: none;
+}
+
+.stats, .rosterHistory {
+   background-color: var(--bg-secondary);
+   width: 95%;
+   text-align: center;
+   color: var(--text-primary);
+   border-radius: 7px;
+}
+
+/*************************************************
+**************************************************
+*********************ROSTERS**********************
+**************************************************
+*************************************************/
+
+.rosterYears {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+
+   margin: auto;
+   background-color: var(--bg-tertiary);
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.year {
+   border-left: 2px solid var(--bg-quaternary);
+   border-right: 2px solid var(--bg-quaternary);
+}
+
+.year:hover {
+   background-color: var(--bg-primary);
+   color: var(--highlight);
+   border-color: var(--highlight);
+   cursor: pointer;
+}
+
+.allRosters {
+   padding: 2%;
+   background-color: var(--bg-tertiary);
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+   gap: 10px;
+   margin-top: 10px;
+   border-radius: 7px;
+}
+
+.teamRoster {
+   background-color: var(--bg-primary);
+}
+
+.rosterScroll {
+   max-height: 300px;
+   overflow-y: scroll;
+}
+
+.rosterHeader {
+   border-bottom: 2px solid var(--bg-quaternary);
+   padding: 10px
+}
+
+.allRosters h2 {
+   font-size: 1.2em;
+}
+
+/***************************************************
+************************NAVBAR**********************
+* *************************************************/
+
+.navbar {
+   width: 5rem;
+   height: 100vh;
+   position: fixed;
+   left:0;
+   background-color: var(--bg-primary);
+   box-shadow: 3px 0px 5px 1px #4C4A59;
+   transition: width 200ms ease;
+   z-index: 5;
+}
+
+.navbar:hover {
+   width: 10rem;
+}
+
+.navbar:hover .link-text{
+   display: block;
+}
+
+.navbar-nav {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100%;
+}
+
+.nav-item {
+   width: 100%;
+}
+
+.nav-link {
+   display: flex;
+   align-items: center;
+   /*line-height: 5rem;*/
+   height: 5rem;
+   color: var(--text-secondary);
+   text-decoration: none;
+   /* filter: grayscale(100%) opacity(0.7); */
+   transition: var(--transition-speed);
+}
+
+
+
+.nav-link svg {
+   /* color: var(--text-primary); */
+   min-width: 2rem;
+   margin: 0 1.5rem;
+}
+
+.nav-link:hover{
+   /* filter: grayscale(0%) opacity(1); */
+   background-color: #131316;
+   color: var(--highlight);
+}
+
+.link-text {
+   display: none;
+   padding-top:10px;
+}
+
+.user {
+   cursor: pointer;
+}
+
+
+
+
+
+/*media query for responsive design */
+
+@media only screen and (max-width: 640px) {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
