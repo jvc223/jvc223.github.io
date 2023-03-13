@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Schmidt Happens Fantasy Baseball</title>
+
+	<!-- viewport for responsive -->	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- character set -->
+    <meta charset="UTF-8">
+  
+
+	<!-- CSS stylesheets -->	
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/jqueryui.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+	<link href="css/fantasy.css" rel="stylesheet" type="text/css">
+	
+  </head>
+  <body>
+
+  	<nav class='navbar'>
+      <ul class='navbar-nav'>
+        <li class='nav-item homebut'>
+          <a href='#' class='nav-link'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon home">
+            	<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            	<polyline points="9 22 9 12 15 12 15 22"></polyline>
+           	</svg>
+            <span class='link-text'>Home</span>
+          </a>
+        </li> 
+
+        <li class='nav-item user'>
+          <div class='nav-link'>
+            <a href="#intro-text" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon usericon">
+              	<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              	<circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span class='link-text'>About Me</span>
+            </a>
+          </div>
+        </li>
+
+        <li class='nav-item'>
+          <div class='nav-link'>
+            <a href='files/JoeCalabreseResume12162020.pdf' target='_blank'  class='nav-link'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon briefcasse">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              <span class='link-text'>R&eacute;sum&eacute;</span>
+            </a>
+          </div>
+        </li>
+
+        <li class='nav-item'>
+          <div class='nav-link'>
+            <a href='#coding_projects' class='nav-link'>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon terminal">
+              	<polyline points="4 17 10 11 4 5"></polyline>
+              	<line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+              <span class='link-text'>Projects</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+  	<header class='banner'>
+  		<div class='imgoverlay'>
+	  		<div class='title'>
+	  			<h1>Schmidt Happens Fantasy Baseball</h1>
+	  			<h2 class='est'>Est. 2008</h4> 
+	  		</div>
+	  	</div>
+  	</header>
+
+  	<div class='rest'>
+  		<div class='commishLetter'>
+  			<p>Welcome to the league! If you’re reading this, you’re either a member of the best fantasy baseball league in existence or your web crawlers are very thorough. Either way, welcome to Schmit Happens.</p>
+
+				<p>I’ve had the pleasure of being the commissioner of this league since its inception in 2008. Schmidt Happens has arguably been the most consistent thing in my life over that time.<p> 
+
+				<p>A lot has changed in the now 16-year history of Schmidt Happens. We’ve had more than 30 fantasy managers, some of whom have been lost to history; we’ve been anywhere from a six to 12-team league; at one point we were even a two-catcher league (what were we thinking?) We’ve tried and failed many times to become a dynasty league. The coronavirus pandemic certainly didn't help with that.</p>
+
+				<p>But what’s remained is that this group is easily the most involved, dedicated baseball fans I know (except Eli… and obviously our robot team), and I couldn’t think of anyone I’d rather compete against every year. I have big plans for this league going forward (like finally being a dynasty league), and I hope Schmidt can continue to Happen for another 16+ years.</p> 
+
+				<p class='signoff'>Sincerely,</p>
+				<p class='signoff signature'>Joe</p>
+				<p class='signoff accolades'>Commissioner, 5x Champion</p>
+
+  		</div><!--closes commishLetter-->
+
+      <div class='stats' id='stats'>
+        <h2>Leaguewide Stats</h2>
+        <h3>See the graph below to view charts of league stats over history</h3>
+      </div> 
+
+      <hr class="break">
+
+      <div class="rosterHistory">
+        <h2>Through the Years</h2>
+        <p>Schmidt Happens has featured more than 30 managers over the last 16 seasons. With over a decade an a half of fantasy baseball, we've seen some players go on to the Hall of Fame, including  Ken Griffey Jr., Vladimir Guerrero, Mariano Rivera, Derek Jeter, Chipper Jones and David Ortiz. Ken Griffey Jr. started his MLB career five years before most of us were born. And now, Vladimir Guerrero's son is a perrenial keeper in the league. Select a year below to see the teams and rosters over the years.</p>
+        <div class="rosterYears">
+          <p class="year" data-year="roster08">2008</p>
+          <p class="year" data-year="roster09">2009</p>
+          <p class="year" data-year="roster10">2010</p>
+          <p class="year" data-year="roster11">2011</p>
+          <p class="year" data-year="roster12">2012</p>
+          <p class="year" data-year="roster13">2013</p>
+          <p class="year" data-year="roster14">2014</p>
+          <p class="year" data-year="roster15">2015</p>
+          <p class="year" data-year="roster16">2016</p>
+          <p class="year" data-year="roster17">2017</p>
+          <p class="year" data-year="roster18">2018</p>
+          <p class="year" data-year="roster19">2019</p>
+          <p class="year" data-year="roster20">2020</p>
+          <p class="year" data-year="roster21">2021</p>
+          <p class="year" data-year="roster22">2022</p>
+        </div>
+        <div class="allRosters">
+
+        </div>
+      </div>
+
+
+
+
+  	</div> <!--closes rest-->  
+
+
+
+
+
+
+
+
+
+<!-- JAVASCRIPT -->
+	<!-- <script src="js/jquery-3.6.0.js"></script> -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jqueryui.js"></script>
+  <script src="https://unpkg.com/d3@7.8.2/dist/d3.min.js"></script>
+  <script src="data/totalwins.js"></script>
+  <script src="data/rosters.js"></script>
+	<script src="js/fantasy.js"></script>
+  </body>
+</html>
