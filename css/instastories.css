@@ -91,6 +91,8 @@ body {
    .footer {
       font-size: 1.1em;
       text-align: center;
+      position: fixed;
+      bottom: 0;
    }
 }
 
