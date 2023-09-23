@@ -1,0 +1,100 @@
+/* styles.css 
+   Project: 
+   Author: 
+   Date: 
+*/
+
+/*google font*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400&display=swap'); */
+
+/*main css*/
+
+
+* {
+   box-sizing: border-box;
+}
+
+img {
+   width: 100%;
+   display: block;
+}
+
+body {
+   background-color: snow;
+   font-family: "Open Sans", "Helvetica Neue"
+   /*font-family: 'Montserrat', sans-serif;*/
+}
+
+.socials {
+   width: 40%;
+   margin: auto;
+   text-align: center;
+}
+
+.socialbox {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 3px;
+}
+
+.socialbox img {
+   aspect-ratio: 3/2;
+   object-fit: contain;
+   /* mix-blend-mode: color-burn; */
+}
+
+.grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 5px;
+   width: 80%;
+   margin: 2% auto;
+}
+
+.grid img {
+   border: 1px solid black;
+}
+
+.footer {
+   width: 100%;
+   font-size: 1.5em;
+   background-color: #00144e;
+   color: white;
+   /* height: 60px; */
+   padding: 2%;
+}
+
+
+
+
+/*media query for responsive design */
+
+@media only screen and (max-width: 640px) {
+
+   .grid {
+      width: 99%;
+      gap: 0;
+      margin-top: 5%;
+   }
+
+   .grid img {
+      border: 1px solid white;
+   }
+
+   .footer {
+      font-size: 1.1em;
+      text-align: center;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
