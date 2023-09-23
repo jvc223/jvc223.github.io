@@ -72,6 +72,12 @@ body {
 
 @media only screen and (max-width: 640px) {
 
+   .socials {
+      width: 60%;
+      margin: auto;
+      text-align: center;
+   }
+   
    .grid {
       width: 99%;
       gap: 0;
