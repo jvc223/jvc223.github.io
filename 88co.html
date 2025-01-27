@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>88 Counties in 88 Days</title>
+
+	<!-- viewport for responsive -->	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- character set -->
+    <meta charset="UTF-8">
+    
+	<!-- CSS stylesheets -->	
+ 
+	<link href="css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="css/jqueryui.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+	<link href="css/88costyles.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" type='image/png' href='img/favicon-32x32.png'>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <!-- WHY DID I MAKE SO MANY DIVS LOL -->
+
+    
+    <div id ="thebigone">
+
+      <div id="themagic">
+        
+        <div class="mapbox">
+
+          <div id="mapid">
+
+          </div><!-- closesmapid -->
+
+        </div><!-- closes mapbox -->
+
+    </div><!-- closes thebigone -->
+
+
+
+
+
+
+
+
+<!-- JAVASCRIPT -->
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jqueryui.js"></script>
+  <script src="data/OHCOs.geoJSON"></script>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+	<script src="js/88coscript.js"></script>
+  <!-- THIS IS THE NEW WAY -->
+  <script src="https://sheets.googleapis.com/v4/spreadsheets/19TujtUStk8lCja7MlKp-Bat3kB2j5dB3OUfAmXATII0/values/Sheet1?alt=json&key=AIzaSyBRDu5qpr0fm77JQn1erWfi0yjqmPuh1HE&callback=loaddata" type="text/javascript"></script>
+  <!-- OLD SPREADSHEET LINK -->
+  <script src="https://spreadsheets.google.com/feeds/list/19TujtUStk8lCja7MlKp-Bat3kB2j5dB3OUfAmXATII0/od6/public/values?alt=json&amp;callback=loaddata" type="text/javascript"></script>
+  </body>
+</html>
