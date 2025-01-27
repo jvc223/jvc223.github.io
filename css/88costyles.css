@@ -1,0 +1,115 @@
+/* styles.css 
+   Project: 88 Counties in 88 Days Map
+   Author: Joe Calabrese
+   Date: 8/20/2020
+
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+   box-sizing: border-box;
+   font-family: 'Roboto Slab', serif;
+}
+
+h4 {
+  margin-block-start: none;
+}
+
+
+#thebigone {
+   width: 100%;
+   
+   /*background-color: snow;*/
+}
+
+.popupco {
+  text-align: center;
+}
+
+.story {
+  text-align: right;
+}
+
+#popbox {
+  width: 100%;
+  display: flex;
+}
+
+#leftbox {
+  flex: 1.5;
+  margin-right: 2%;
+  /*display: flex;*/
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#leftbox img {
+  margin-top: 1em;
+  width: 100%;
+  display: block;
+}
+
+#rightbox {
+  flex: 2;
+}
+
+
+/***************************************************************************
+****************************************************************************
+*************************I'M THE MAP****************************************
+***************************************************************************/
+
+.mapbox {
+   width: 100%;
+}
+
+#mapid {
+   height: 600px;
+   width: 600px;
+   position: relative;
+   top: 0;
+   left: 0;
+   z-index: 0;
+/*   margin: auto;*/
+
+  /* opacity: 0.7;*/
+  /*display: none;*/
+}
+
+#mobilemap {
+  display: none;
+  width: 100%;
+  height: 600px;
+}
+
+
+
+/*.toggle {
+  cursor: pointer;
+}*/
+
+/*media query for responsive design */
+
+@media only screen and (max-width: 640px) {
+
+  #mapid {
+    display: none;
+  }
+
+  #mobilemap{
+    display: block;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
