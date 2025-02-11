@@ -1,0 +1,102 @@
+/* styles.css 
+   Project: 
+   Author: 
+   Date: 
+*/
+
+/*google font*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@300;400&display=swap');
+
+/*main css*/
+
+
+* {
+   box-sizing: border-box;
+}
+
+img {
+   width: 100%;
+   display: block;
+}
+
+body {
+   background-color: lavender;
+   font-family: 'Lato', sans-serif;
+   /*font-family: 'Montserrat', sans-serif;*/
+}
+
+form {
+   margin: 1%;
+}
+.container {
+   width: 70%;
+   border: 1px solid black;
+   margin: auto;
+}
+
+.updated {
+   margin-top: 0;
+}
+
+.crimeselect {
+   text-align: center;
+   font-weight: bolder;
+}
+
+.boxes {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 5px;
+}
+
+.box {
+   text-align: center;
+   border-radius: 25px;
+   color: white;
+   background-color: gray;
+}
+
+.box h1 {
+   color: navy;
+}
+
+.text {
+   width: 70%;
+   margin: auto;
+   padding: 2%;
+   line-height: 25px;
+}
+
+.map {
+   width: 100%;
+}
+
+#mymap {
+   width: 80%;
+   margin: auto;
+   border: 2px solid black;
+   box-shadow: 2px 2px 5px gray;
+   height: 500px;
+}
+
+
+
+
+/*media query for responsive design */
+
+@media only screen and (max-width: 640px) {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
