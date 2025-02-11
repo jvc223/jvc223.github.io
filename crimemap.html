@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Crime Tracker</title>
+
+    <!-- viewport for responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- character set -->
+    <meta charset="UTF-8" />
+
+    <!-- CSS stylesheets -->
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/jqueryui.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <link href="css/crimemap.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="img/gdlaexample.webp" />
+      <h6 class="updated">
+        Updated by the FOX LA Data Team on
+        <time datetime="2023-1-25 16:04">Jan. 25, 2023 at 4:04 p.m.</time>
+      </h6>
+      <div class="crimeselect">
+        <p>FOX 11 is tracking cimre and safety across Southern California.</p>
+        <form>
+          <label for="crimes">You can choose a crime</label>
+          <select name="crimes" id="crimes">
+            <option value="homicides">Homicides</option>
+            <option value="assaults">Assaults</option>
+            <option value="vehiclethefts">Vehicle Thefts</option>
+          </select>
+        </form>
+        <form>
+          <label for="counties">You can choose a county</label>
+          <select name="counties" id="counties">
+            <option value="losangeles">Los Angeles County</option>
+            <option value="riverside">Riverside County</option>
+            <option value="orange">Orange County</option>
+            <option value="sanbernardino">San Bernardino County</option>
+            <option value="riverside">Riverside County</option>
+          </select>
+        </form>
+      </div>
+      <!-- closes crimeselect -->
+      <div class="boxes">
+        <div class="box">
+          <p>Homicides</p>
+          <h1>1M</h1>
+          <p>Last 12 Months</p>
+          <p>Through time period</p>
+        </div>
+        <div class="box">
+          <p>Homicides</p>
+          <h1>1M</h1>
+          <p>Last 12 Months</p>
+          <p>Through time period</p>
+        </div>
+        <div class="box">
+          <p>Homicides</p>
+          <h1>1M</h1>
+          <p>Last 12 Months</p>
+          <p>Through time period</p>
+        </div>
+        <div class="box">
+          <p>Homicides</p>
+          <h1>1M</h1>
+          <p>Last 12 Months</p>
+          <p>Through time period</p>
+        </div>
+      </div>
+      <!-- closes boxes -->
+      <div class="text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsum
+          obcaecati, ut nemo quia reprehenderit. Natus atque beatae rem saepe
+          repudiandae temporibus, architecto adipisci voluptatibus perspiciatis
+          magni iusto at tenetur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsum
+          obcaecati, ut nemo quia reprehenderit. Natus atque beatae rem saepe
+          repudiandae temporibus, architecto adipisci voluptatibus perspiciatis
+          magni iusto at tenetur.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi sunt
+          quos soluta officia iste? Sint velit officia minus sunt ab provident
+          consequatur, culpa ratione fugiat pariatur molestias. Voluptas,
+          commodi expedita!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad possimus
+          quibusdam ea vel dignissimos, dicta accusantium provident non sed,
+          delectus voluptates incidunt, eos dolorem soluta eaque eum doloribus
+          debitis reprehenderit.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          laudantium qui aspernatur beatae ad suscipit id modi non aut maxime,
+          nulla quia culpa minima quod labore incidunt error fuga
+          necessitatibus.
+        </p>
+      </div>
+      <!-- closes text -->
+      <section class="map">
+        <div id="mymap"></div>
+      </section>
+    </div>
+    <!--closes container-->
+
+    <!-- JAVASCRIPT -->
+    <!-- <script src="js/jquery-3.6.0.js"></script> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jqueryui.js"></script>
+    <script src="data/data1.js"></script>
+    <script src="data/data2.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <script src="js/crimemap.js"></script>
+  </body>
+</html>
