@@ -1,24 +1,48 @@
 /* script.js 
-   Author:
-   Date:
+   Author: Joe Calabrese
+   Date: Jan. 27, 2025
 */
 
-console.log(losangeles);
 
 $(document).ready(function(){ // begin document.ready block
 
-	var mymap = L.map('mymap', { 
-		scrollWheelZoom: true, 
-		zoomControl: true})
-		.setView([34.4609886,-117.7471356], 7);
+	$(".joepic").click(function(){
 
-   L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-         attribution: 'Map by Joe Calabrese &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> Contriubutors',
-         subdomains: ['a','b','c']})
-   .addTo(mymap);
+		$(".statsbox").fadeToggle();
+		console.log("buryme")
+	});
 
-   var thedata = L.geoJSON(socalcounties).addTo(mymap);
+	$(".user").click(function(){
+
+		$(".statsbox").fadeToggle();
+	});
+
+	// $("#reel").waypoint(function(direction){
+
+	// 	if (direction == "down"){
+	// 		$('.reelvid').fadeTo("slow", 1);
+	// 	}
+
+	// 	if (direction == "up"){
+	// 		$('.reelvid').fadeTo("slow", 0);
+	// 	}
+
+
+	// },{offset: 100});
+
+
+	$(".card").mouseenter(function(){
+
+		console.log("hoverrrr");
+
+		$(this).find('.cardvid').get(0).play();
+
+	});
+
+	$(".card").mouseleave(function(){
+
+		$(this).find(".cardvid").get(0).pause();
+	});
+
 
 }); //end document.ready block
-
-   
